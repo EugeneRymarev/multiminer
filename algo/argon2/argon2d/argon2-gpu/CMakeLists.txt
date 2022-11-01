@@ -23,7 +23,7 @@ endif()
 
 if(CUDA_FOUND)
     set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};
-        -std=c++11;--compiler-options=-fPIC;-O3;--ptxas-options=-v;-arch sm_30;-lineinfo
+        -std=c++11;--compiler-options=-fPIC;-O3;--ptxas-options=-v;-arch "sm_35;sm_37;sm_50;sm_52;sm_60;sm_61;sm_70;sm_75;sm_80;sm_86;sm_87";-lineinfo
     )
 endif()
 
